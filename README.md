@@ -38,9 +38,9 @@ misestmd tx staking edit-validator \
 
 # WALLET
 
-Add wallet
+Add new wallet
 ```
-8ball keys add $WALLET --recover
+8ball keys add $WALLET
 ```
 
 Recover wallet using seed phrase
