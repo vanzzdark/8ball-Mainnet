@@ -7,7 +7,7 @@ echo "  ##:::..:: ##:'##::::. ####::: ####: ##: ##:::::::::: ##::::  ";
 echo " :. ######:: #####::::::.##:::: ## ## ##: ######:::::: ##::::  ";
 echo " '##::: ##: ##:. ##::::: ##:::: ##:. ###: ##:::::::::: ##::::  ";
 echo " . ######:: ##::. ##:::: ##:::: ##::. ##: ########:::: ##::::  ";
-echo " CREDIT : VANZZDARK SKYNET | SPECIAL THANKS TO : MAMAD PINROCK ";
+echo " CREDIT : VANZZDARK SKYNET | SPECIAL THANKS TO : PINROCK KONSORTECH";
 echo -e "\e[0m"
 
 sleep 2
@@ -112,7 +112,7 @@ EOF
 # start service
 sudo systemctl daemon-reload
 sudo systemctl enable 8ball
-sudo systemctl restart 8ball && sudo journalctl -u 8ball -f -o cat
+sudo systemctl restart 8ball
 
 echo '=============== SETUP FINISHED ==================='
 echo -e 'To check logs: \e[1m\e[32msudo journalctl -u 8ball -f -o cat\e[0m'
