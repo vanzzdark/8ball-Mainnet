@@ -1,6 +1,6 @@
 # FULLNODE SETUP
 ```
-wget -O misestm.sh https://raw.githubusercontent.com/vanzzdark/misestm/main/8ball.sh && chmod +x 8ball.sh && ./8ball.sh
+wget -O 8ball.sh https://raw.githubusercontent.com/vanzzdark/misestm/main/8ball.sh && chmod +x 8ball.sh && ./8ball.sh
 ```
 
 ## Post installation
