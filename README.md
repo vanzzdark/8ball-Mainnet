@@ -69,26 +69,6 @@ Restart service
 sudo systemctl restart 8ball
 ```
 
-# Node info
-Synchronization info
-```
-8ball status 2>&1 | jq .SyncInfo
-```
-
-Validator info
-```
-8ball status 2>&1 | jq .ValidatorInfo
-```
-
-Node info
-```
-8ball status 2>&1 | jq .NodeInfo
-```
-
-Show node id
-```
-8ball tendermint show-node-id
-```
 
 # Delete Node
 ```
