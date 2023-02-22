@@ -35,3 +35,70 @@ misestmd tx staking edit-validator \
   --chain-id $CHAIN_ID \
   --from $WALLET
 ```
+
+# WALLET
+
+Add wallet
+```
+8ball keys add $WALLET --recover
+```
+
+Recover wallet using seed phrase
+```
+8ball keys add $WALLET --recover
+```
+
+# Usefull commands
+Check logs
+```
+journalctl -fu 8ball -o cat
+```
+
+Start service
+```
+sudo systemctl start 8ball
+```
+
+Stop service
+```
+sudo systemctl stop 8ball
+```
+
+Restart service
+```
+sudo systemctl restart 8ball
+```
+
+# Node info
+Synchronization info
+```
+8ball status 2>&1 | jq .SyncInfo
+```
+
+Validator info
+```
+8ball status 2>&1 | jq .ValidatorInfo
+```
+
+Node info
+```
+8ball status 2>&1 | jq .NodeInfo
+```
+
+Show node id
+```
+8ball tendermint show-node-id
+```
+
+# Delete Node
+```
+sudo systemctl stop 8ball && \
+sudo systemctl disable 8ball && \
+rm /etc/systemd/system/8ball.service && \
+sudo systemctl daemon-reload && \
+cd $HOME && \
+rm -rf 8ball && \
+rm -rf 8ball.sh && \
+rm -rf .8ball && \
+rm -rf $(which 8ball)
+````
